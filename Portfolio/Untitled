@@ -1,0 +1,209 @@
+/* Base Styles */
+
+body {
+  color: #A0A09F;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.main-content {
+  width: 95%;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 1px #a51924 solid;
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.header-logo {
+  width: 200px;
+  flex: 0 1 60%;
+}
+
+.dropmenu {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  padding-bottom: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: #A0A09F;
+}
+
+ul li a {
+  margin-right: 10px;
+  padding: 2px;
+  display: block;
+  transition: all .25s ease-out;
+}
+
+ul li a:hover {
+  color: #a51924;
+  transition: all .25s ease-out;
+}
+
+img.slideshow-image {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.instagram-icon {
+  margin: 8px 0 0px;
+  width: 30px;
+  align-self: center;
+}
+
+/* Slideshow */
+
+.slideshow-container {
+  position: relative;
+}
+
+.prev, .next {
+  color: white;
+  position: absolute;
+  top: 44%;
+  display: block;
+  padding: 20px;
+}
+
+.next {
+  right: 0;
+}
+
+.mySlides {
+  display: none;
+}
+
+.slideshow-image {
+  position: relative;
+}
+
+/* Slideshow End */
+
+/* Media Queries */
+
+/* Medium Media Query */
+
+@media only screen and (min-width: 600px) {
+
+  .main-content, .header-content {
+    max-width: 80%;
+  }
+
+  header {
+    justify-content: space-between;
+    margin: 15px 0 0 0;
+    padding-bottom: 10px;
+  }
+
+  .header-logo {
+    flex: 0 1 20%;
+    max-width: 170px;
+  }
+
+  nav {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    bottom: 0;
+  }
+
+  .nav-ul {
+    padding: 0;
+    margin: 0 0 5px;
+  }
+
+  .nav-li {
+    padding-right: 10px;
+  }
+
+  .nav-li:last-child {
+    padding-right: 0;
+  }
+
+  .nav-li-a {
+    padding: 5px;
+  }
+
+  .nav-li-a:first-child {
+    margin-bottom: 1px;
+    text-align: center;
+  }
+
+  .dropmenu {
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.2);
+    width: 80px;
+    z-index: 1;
+  }
+
+  .dropdown-li:hover .dropmenu {
+    display: block;
+  }
+
+  .dropmenu-item {
+    text-align: center;
+    padding: 1px;
+    margin: 0;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(160,160,159,0.5);
+    cursor: pointer;
+  }
+}
+
+/* Large Media Query */
+
+@media only screen and (min-width: 600px) {
+
+.main-content {
+  max-width: 56%;
+}
+
+.header-content {
+  margin: 0 22%;
+}
+
+header {
+  margin: 12px 0;
+}
+
+.header-logo {
+  width: 220px;
+  margin-bottom: 0;
+}
+
+nav {
+  right: 22%;
+}
+
+ul {
+  font-size: 14px;
+}
+
+.instagram-icon {
+  width: 33px;
+}
+}
