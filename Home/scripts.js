@@ -51,8 +51,10 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   slides[slideIndex-1].style.display = "block";
-  // setTimeout("plusSlides(+1)", 3000); Automatic
 }
+
+  // setTimeout("plusSlides(+1)", 3000);
+
 
 // slideshow end
 
