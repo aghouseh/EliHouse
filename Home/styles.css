@@ -1,8 +1,8 @@
 /*-------------- Base Styles --------------*/
 
 body {
-  color: #FFFFFF;
-  background: #778899;
+  color: #5a5a5a;
+  background: #f0f0f0;
   font-family: Quicksand, 'Raleway', sans-serif;
   margin: 0 auto;
   box-sizing: border-box;
@@ -40,6 +40,10 @@ footer {
   align-self: center;
 }
 
+.menu-button {
+  display: none;
+}
+
 .nav-ul {
   list-style-type: none;
   padding: 0;
@@ -47,32 +51,25 @@ footer {
   justify-content: space-between;
   font-size: 15px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #FFFFFF;
 }
 
 .nav-li-a {
   padding: 8px 30px;
   text-align: center;
   display: block;
-  border-right: 1px solid #FFFFFF;
-  color: #FFFFFF;
+  border-right: 1px solid;
+  color: #5a5a5a;
   transition: all .25s ease-out;
 }
 
-nav ul a:last-child {
+/* nav ul a:last-child {
   margin-right: 0;
   border: none;
-}
+} */
 
 .nav-li-a:hover {
   color: #a51924;
   transition: all .25s ease-out;
-}
-
-.border {
-  margin: 0 auto;
-  width: 335.61px;
-  border-bottom: 1px solid #FFFFFF;
 }
 
 .social-media-large {
@@ -116,6 +113,7 @@ nav ul a:last-child {
   padding: 10px;
   width: 20px;
   background-color: rgba(160,160,159, .3);
+  border-radius: 5px;
 }
 
 .next {
@@ -133,6 +131,67 @@ nav ul a:last-child {
 /*-------------- Slideshow End --------------*/
 
 /*-------------- Media Queries --------------*/
+
+/*-------------- Small Media Query --------------*/
+
+@media only screen and (max-width: 499px) {
+
+  /*-------------- Mobile Hamburger Menu --------------*/
+
+  .header-content {
+    margin: 15px 0;
+  }
+
+  .mobile-header-position {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    width: 95%;
+  }
+
+  .header-logo {
+    width: 215px;
+    margin: 20px;
+  }
+
+  .menu-button {
+    display: block;
+    align-self: center;
+    width: 45px;
+    height: 45px;
+    margin: 15px 0 0 10px;
+  }
+
+  .nav-ul {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    margin: 0 auto;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #f0f0f0;
+  }
+
+  .nav-li-a {
+    padding: 15px;
+    border-right: none;
+    border-bottom: 1px solid #C0C0C0;
+  }
+
+  .nav-ul:first-child {
+    border-top: 1px solid #C0C0C0;
+  }
+
+  .nav-ul:last-child {
+    padding-bottom: 0;
+  }
+
+  .slideshow-container {
+    /* display: none; */
+  }
+}
 
 /*-------------- Medium Media Query --------------*/
 
