@@ -30,7 +30,7 @@ footer {
 }
 
 .main-content {
-  width: 95%;
+  width: 100;
   margin: 0 auto;
 }
 
@@ -84,11 +84,11 @@ footer {
 }
 
 .social-media-small a img {
-  width: 22px;
+  width: 30px;
   margin: 0;
   padding: 5px;
   align-self: center;
-  opacity: .7;
+  opacity: .4;
 }
 
 .dropmenu {
@@ -117,7 +117,7 @@ footer {
 }
 
 .next {
-  right: 2.5%;
+  right: 0;
 }
 
 .mySlides {
@@ -139,28 +139,41 @@ footer {
   /*-------------- Mobile Hamburger Menu --------------*/
 
   .header-content {
-    margin: 15px 0;
+    margin: 25px 0;
   }
 
   .mobile-header-position {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    width: 95%;
+    width: 100%;
   }
 
   .header-logo {
-    width: 215px;
-    margin: 20px;
+    /* width: 200px; */
+    margin: 0;
+    align-self: center;
   }
 
   .menu-button {
     display: block;
     align-self: center;
-    width: 45px;
-    height: 45px;
-    margin: 15px 0 0 10px;
+    position: absolute;
+    right: 15px;
+    width: 28px;
+    height: 28px;
+    margin-top: 5px;
+  }
+
+  .cancel-button {
+    display: none;
+    align-self: center;
+    position: absolute;
+    right: 15px;
+    width: 23px;
+    height: 23px;
+    margin-top: 5px;
   }
 
   .nav-ul {
@@ -168,14 +181,14 @@ footer {
     z-index: 1;
     position: absolute;
     margin: 0 auto;
-    top: 100%;
+    top: calc(100% + 25px);
     left: 0;
     width: 100%;
     background: #f0f0f0;
   }
 
   .nav-li-a {
-    padding: 15px;
+    padding: 18px;
     border-right: none;
     border-bottom: 1px solid #C0C0C0;
   }

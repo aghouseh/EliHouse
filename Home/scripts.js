@@ -55,3 +55,39 @@ function showSlides(n) {
 }
 
 // slideshow end
+
+// mobile hamburger Menu
+
+var menuOpenButton = document.getElementById("menu-button");
+var menuCancelButton = document.getElementById("cancel-button");
+var nav = document.getElementById("nav-ul");
+
+function showMenu() {
+  nav.style.display = "block";
+}
+
+function hideMenu() {
+  nav.style.display = "none";
+}
+
+function changeToCancel() {
+  menuOpenButton.style.display = "none";
+  menuCancelButton.style.display = "block";
+}
+
+function changeToMenu() {
+  menuCancelButton.style.display = "none";
+  menuOpenButton.style.display = "block";
+}
+
+menuOpenButton.addEventListener("click", function() {
+  showMenu();
+  changeToCancel();
+});
+
+menuCancelButton.addEventListener("click", function() {
+    hideMenu();
+    changeToMenu();
+});
+
+// mobile hamburger menu end
