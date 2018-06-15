@@ -81,21 +81,6 @@ footer {
   display: none;
 }
 
-.social-media-small {
-  display: flex;
-  align-self: center;
-  margin: 10px;
-  filter: invert(100%);
-}
-
-.social-media-small a img {
-  width: 30px;
-  margin: 0;
-  padding: 5px;
-  align-self: center;
-  opacity: .4;
-}
-
 .dropmenu {
   display: none;
 }
@@ -139,7 +124,7 @@ footer {
 
 /*-------------- Small Media Query --------------*/
 
-@media only screen and (max-width: 499px) {
+@media only screen and (max-width: 599px) {
 
   /*-------------- Mobile Hamburger Menu --------------*/
 
@@ -206,14 +191,25 @@ footer {
     padding-bottom: 0;
   }
 
-  .slideshow-container {
-    /* display: none; */
+  .social-media-small {
+    display: flex;
+    align-self: center;
+    margin: 5px;
+    filter: invert(100%);
+  }
+
+  .social-media-small a img {
+    width: 27px;
+    margin: 0;
+    padding: 5px;
+    align-self: center;
+    opacity: .3;
   }
 }
 
 /*-------------- Medium Media Query --------------*/
 
-@media only screen and (min-width: 500px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
 
 body {
   background-color: #5a5a5a;
