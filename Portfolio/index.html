@@ -9,32 +9,43 @@
   <body>
     <div class="body-wrapper">
       <header>
-        <div class="header-content">
-          <img class="header-logo" src="../Images/Offcial_Logo.png">
+        <div class="header-content mobile-header-position">
+          <img class="header-logo" src="../Images/Logos/Offcial_Logo.png">
+          <img class="menu-button" id="menu-button"; src="../Images/Buttons/menu.svg">
+          <img class="cancel-button" id="cancel-button" src="../Images/Buttons/cancel.svg">
           <nav>
-            <ul class="nav-ul">
-              <li class="dropdown-li nav-li"><a href="" class="nav-li-a">Portfolio</a>
-                            <div class="dropmenu">
-                              <a href="" class="dropmenu-item"><p>Interior</p></a>
-                              <a href="" class="dropmenu-item"><p>Exterior</p></a>
-                            </div>
-                            </li>
-              <li class="nav-li"><a href="" class="nav-li-a">Contact</a></li>
-              <li class="nav-li"><a href="" class="nav-li-a">About</a></li>
+            <ul class="nav-ul" id="nav-ul">
+              <a href="" class="nav-li-a"><li class="dropdown-li">Portfolio</li></a>
+              <a href="" class="nav-li-a"><li>Contact</li></a>
+              <a href="" class="nav-li-a"><li>About</li></a>
             </ul>
           </nav>
+          <div class="social-media-large">
+            <a><img src="../Images/SocialMedia/iconmonstr-facebook-3.svg"></a>
+            <a><img src="../Images/SocialMedia/iconmonstr-instagram-8.svg"></a>
+            <a><img src="../Images/SocialMedia/iconmonstr-twitter-3.svg"></a>
+          </div>
         </div>
       </header>
       <div class="main-content">
-        <ul>
-          <a href=""><li class="interior-page-container"><img src="../Images/Interior-Portpage.jpg" class="interior-page-photo"><div class="interior-page-text">Interior</div></li></a>
-          <a href=""><li class="exterior-page-container"><img src="../Images/Exterior-portpage.jpg" class="exterior-page-photo"><div class="exterior-page-text">Exterior</div></li></a>
-        </ul>
+
+          <div class="interior-page-container-mobile"><a href=""><img src="../Images/PortfolioPortal/PortfolioPortal1.jpg" class="interior-page-photo-mobile"><p class="interior-page-text-mobile">Interior</p></a></div>
+          <div class="exterior-page-container-mobile"><a href=""><img src="../Images/PortfolioPortal/PortfolioPortal2.jpg" class="exterior-page-photo-mobile"><p class="exterior-page-text-mobile">Exterior</p></a></div>
+
+          <div class="interior-page-container-large"><a href=""><img src="../Images/PortfolioPortal/PortfolioPortal1.jpg" class="interior-page-photo-large"><p class="interior-page-text-large">Interior</p></a></div>
+          <div class="exterior-page-container-large"><a href=""><img src="../Images/PortfolioPortal/PortfolioPortal2.jpg" class="exterior-page-photo-large"><p class="exterior-page-text-large">Exterior</p></a></div>
+
+        </div>
+        <div class="border"></div>
+        <footer>
+          <div class="social-media-small">
+            <a><img src="../Images/SocialMedia/iconmonstr-facebook-3.svg"></a>
+            <a><img src="../Images/SocialMedia/iconmonstr-instagram-8.svg"></a>
+            <a><img src="../Images/SocialMedia/iconmonstr-twitter-3.svg"></a>
+          </div>
+        </footer>
       </div>
-      <footer>
-        <a href="https://www.instagram.com/elijahhouseholder/"><img class="instagram-icon" src="../Images/instagram.png"></a>
-      </footer>
-      <script type='text/javascript' src='scripts.js'></script>
     </div>
+      <script type='text/javascript' src='scripts.js'></script>
   </body>
 </html>
