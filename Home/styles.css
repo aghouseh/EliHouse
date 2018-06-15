@@ -274,6 +274,14 @@ nav {
   text-transform: uppercase;
 }
 
+.menu-button {
+  display: none;
+}
+
+.cancel-button {
+  display: none;
+}
+
 .main-content {
   height: 100vh;
   width: 100%;
@@ -383,6 +391,14 @@ nav {
     border: none;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .cancel-button {
+    display: none;
   }
 
   .main-content {
